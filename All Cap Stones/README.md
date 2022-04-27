@@ -1,1 +1,1 @@
-aaaaaaa
+This is folder is destined to my capstone (or big) projects!
