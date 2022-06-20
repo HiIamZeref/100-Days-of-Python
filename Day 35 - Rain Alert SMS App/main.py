@@ -1,7 +1,7 @@
 import requests
 
 api_adress = "https://api.openweathermap.org/data/2.5/onecall"
-api_key = "9eb26fe6ae64cd0e0ff9355ca7b0662e"
+api_key = "##########"
 
 params = {
     "lat": -3.732714,
