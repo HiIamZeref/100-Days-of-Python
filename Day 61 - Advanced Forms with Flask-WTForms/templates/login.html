@@ -1,0 +1,23 @@
+{% extends 'bootstrap/base.html' %}
+{% block title %}Secrets{% endblock %}
+{% block content %}
+        <div class="container">
+		<h1>Login</h1>
+        <form action=" {{ url_for('login') }} " method="post" novalidate>
+			{{ login.csrf_token }}
+			<p>
+				{{ login.email.label }} <br> {{ login.email(size= 30) }}
+				{% for err in login.email.errors %}
+				<span style="color:red;">{{ err }}</span>
+				{% endfor %}
+			</p>
+			<p>
+				{{ login.password.label }} <br> {{ login.password(size= 30) }}
+				{% for err in login.password.errors %}
+				<span style="color:red;">{{ err }}</span>
+				{% endfor %}
+			</p>
+			{{ login.submit }}
+		</form>
+        </div>
+{% endblock %}
